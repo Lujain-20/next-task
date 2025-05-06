@@ -1,6 +1,5 @@
 "use client"
 import React, { useState } from 'react'
-import './PostUi.css';
 
 function PostUi() {
     const [post, setPost] = useState([]);
@@ -25,12 +24,12 @@ function PostUi() {
         setInput("");
     }
 
-    async function deletePost(id) {
-        await fetch(`http://localhost:3000/post/${id}`, {
-            method: "DELETE"
-        });
-        getPost(); 
-    }
+    // async function deletePost(id) {
+    //     await fetch(`http://localhost:3000/post/${id}`, {
+    //         method: "DELETE"
+    //     });
+    //     getPost(); 
+    // }
 
     return (
         <div className="post-container">

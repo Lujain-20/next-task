@@ -7,7 +7,7 @@ import { signOut } from '../auth';
 function Navbar() {
   async function out() {
     'use server'
-     await signOut("google", { redirectTo: "/about" });
+     await signOut({ redirectTo: "/about" });
   }
   return (
     <nav className="bg-gray-900 text-white py-4">
