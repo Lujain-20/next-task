@@ -1,5 +1,5 @@
 import React from 'react';
-import { signUp } from '../auth'; 
+import { signIn } from '../auth';
 
 function SignUp() {
   async function register(event) {
@@ -9,7 +9,7 @@ function SignUp() {
       email: formData.get('email'),
       password: formData.get('password'),
     };
-    await signUp(data); 
+    await signIn(data); 
   }
 
   return (
